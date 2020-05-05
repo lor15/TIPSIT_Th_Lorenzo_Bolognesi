@@ -34,7 +34,6 @@ public class ContaNani extends Thread {
        thr5.start();
        thr6.start();
        thr7.start();
-       
     }
     
 }
