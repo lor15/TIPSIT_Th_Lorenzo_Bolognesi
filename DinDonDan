@@ -1,0 +1,22 @@
+package dindondan;
+
+/**
+ *
+ * @author Lorenzo Bolognesi
+ */
+public class DinDonDan {
+
+    public static void main(String[] args) {
+        
+        Campana cam1 = new Campana("din",3);
+        Campana cam2 = new Campana("don",3);
+        Campana cam3 = new Campana("dan",3);
+        Thread thr1 = new Thread(cam1);
+        Thread thr2 = new Thread(cam2);
+        Thread thr3 = new Thread(cam3);
+        thr1.start();
+        thr2.start();
+        thr3.start();
+       
+    }
+}
