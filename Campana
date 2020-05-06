@@ -1,0 +1,26 @@
+package dindondan;
+
+/**
+ *
+ * @author Lorenzo Bolognesi
+ */
+public class Campana extends Thread implements Runnable  {
+    String suono;
+    int volte;
+    
+    public Campana(String suono,int volte){
+        this.suono=suono;
+        this.volte=volte;
+    }
+    
+    public void run(){
+        for(int k=0;k<volte;k++){
+            try{
+                Thread.sleep(500);
+                System.out.print((k+1)+" "+suono+" ");
+            }
+        catch(InterruptedException e){System.out.println(e);}
+            
+        }
+    } 
+}
